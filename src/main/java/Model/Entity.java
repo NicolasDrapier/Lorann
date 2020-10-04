@@ -4,7 +4,7 @@ package Model;
  * Abstract Entity Class. Extends GameObject.
  *
  * @author Nicolas Drapier
- * @see 1.0
+ * @version  1.0
  * @see GameObject
  */
 public abstract class Entity extends GameObject {
