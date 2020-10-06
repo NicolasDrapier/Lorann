@@ -106,15 +106,17 @@ public class Player extends Entity implements IAnimation {
      * @see IAnimation
      */
     public Spell instantiateSpell(Direction direction) {
+        int x = getPosition().getX();
+        int y = getPosition().getY();
         return switch (direction) {
-            case UP -> new Spell(new Position(getPosition().getX(), getPosition().getY() - IMAGE_SIZE));
-            case DOWN -> new Spell(new Position(getPosition().getX(), getPosition().getY() + IMAGE_SIZE));
-            case RIGHT -> new Spell(new Position(getPosition().getX() + IMAGE_SIZE, getPosition().getY()));
-            case LEFT -> new Spell(new Position(getPosition().getX() - IMAGE_SIZE, getPosition().getY()));
-            case UP_RIGHT -> new Spell(new Position(getPosition().getX() + IMAGE_SIZE, getPosition().getY() - IMAGE_SIZE));
-            case UP_LEFT -> new Spell(new Position(getPosition().getX() - IMAGE_SIZE, getPosition().getY() - IMAGE_SIZE));
-            case DOWN_RIGHT -> new Spell(new Position(getPosition().getX() + IMAGE_SIZE, getPosition().getY() + IMAGE_SIZE));
-            case DOWN_LEFT -> new Spell(new Position(getPosition().getX() - IMAGE_SIZE, getPosition().getY() + IMAGE_SIZE));
+            case UP -> new Spell(new Position(x, y - IMAGE_SIZE));
+            case DOWN -> new Spell(new Position(x, y + IMAGE_SIZE));
+            case RIGHT -> new Spell(new Position(x + IMAGE_SIZE, y));
+            case LEFT -> new Spell(new Position(x - IMAGE_SIZE, y));
+            case UP_RIGHT -> new Spell(new Position(x + IMAGE_SIZE, y - IMAGE_SIZE));
+            case UP_LEFT -> new Spell(new Position(x - IMAGE_SIZE, y - IMAGE_SIZE));
+            case DOWN_RIGHT -> new Spell(new Position(x + IMAGE_SIZE, y + IMAGE_SIZE));
+            case DOWN_LEFT -> new Spell(new Position(x - IMAGE_SIZE, y + IMAGE_SIZE));
         };
 
     }
