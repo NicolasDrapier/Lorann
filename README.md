@@ -35,6 +35,16 @@ This project has above all an educational goal, it is composed of :
 * Connection to a database (*not implemented yet*)
 * Graphic effects with Swing
 
+## Todo
+
+```.todo
+- [] Get maps from db
+- [] Add more levels
+- [] Add monsters
+- [] Add monsters AI
+```
+
+
 ## Install from sources
 
 Clone repo and compile sources with Java 14
