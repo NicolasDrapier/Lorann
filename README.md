@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="https://lh3.googleusercontent.com/proxy/nPQ4qCi_U-XmN7ErIoOR1sYAjR7PMM4f-dRTbwTKO23Ls9tvKE499bTinDz2H_BTRhd-VsnoFwRu1pfqCEQbjlMm9g8X9g" />
+  <img src="https://lh3.googleusercontent.com/proxy/E4rTj7JuUp-FFYmvufgmwkThXO4z7ObISCwBgASPGeGAamQR0CH-SgnGFDt8Tf_n1S054Nzr8T151ZDl-qTHv9Ij7SA9LA" />
 </p>
 
 ## Game
