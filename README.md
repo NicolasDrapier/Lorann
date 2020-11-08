@@ -13,10 +13,6 @@
   <img src="https://img.shields.io/github/followers/NicolasDrapier?style=social"/>
 </p>
 
-<p align="center">
-  <img src="https://lh3.googleusercontent.com/proxy/E4rTj7JuUp-FFYmvufgmwkThXO4z7ObISCwBgASPGeGAamQR0CH-SgnGFDt8Tf_n1S054Nzr8T151ZDl-qTHv9Ij7SA9LA" />
-</p>
-
 ## Game
 
 Lorann, Master of the Spell, the World of Nova-Ann needs your strength and your cunning! Release the hundred and one crypts possessed by the Mask of Nekron, by touching the Energy Bubble which is in each one of them. Bring back the ephemeral Idols of Life to the Cave, each one will be worth two additional Lives to you. Collect the fabulous treasures that await you and your wealth will be immense! Avoid the attacks of the four dreadful Demons created by the infamous Nekron, by skillfully using your very powerful Multicolored Spell that obeys your will. Glory awaits you, Lorann... may the Spell protect you!
