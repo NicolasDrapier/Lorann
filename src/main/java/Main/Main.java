@@ -28,7 +28,6 @@ public class Main {
 
         SwingUtilities.invokeLater(() -> {
             GameFrame gameFrame = new GameFrame(model, controller);
-            player.addPropertyChangeListener(gameFrame);
         });
 
 

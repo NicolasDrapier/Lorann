@@ -1,12 +1,10 @@
 package Model;
 
 import javax.swing.*;
-import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 /**
- * GameObject class is the root class for each game component.
- * Abstract.
+ * GameObject class is the root class for each game component. Abstract.
  *
  * @author Nicolas Drapier
  * @version 1.0
@@ -14,13 +12,11 @@ import java.beans.PropertyChangeSupport;
 public abstract class GameObject {
 
     private final Position position;
-    private final PropertyChangeSupport support;
     private ImageIcon imageIcon;
     private byte data;
 
     /**
-     * Default parameterized constructor
-     * Add PropertyChangeSupport (this) for Observer Pattern.
+     * Default parameterized constructor Add PropertyChangeSupport (this) for Observer Pattern.
      *
      * @param position New Position of the object.
      * @see Position
@@ -28,7 +24,6 @@ public abstract class GameObject {
      */
     public GameObject(Position position) {
         this.position = position;
-        this.support = new PropertyChangeSupport(this);
     }
 
     /**
@@ -42,11 +37,9 @@ public abstract class GameObject {
     }
 
     /**
-     * Change ImageIcon of the GameObject.
-     * Fire PropertyChangeListener to re-render gamePanel.
+     * Change ImageIcon of the GameObject. Fire PropertyChangeListener to re-render gamePanel.
      *
      * @param imageIcon New ImageIcon.
-     * @see PropertyChangeListener
      * @see PropertyChangeSupport
      * @see ImageIcon
      * @see View.GamePanel
@@ -57,12 +50,10 @@ public abstract class GameObject {
         } else {
             this.imageIcon.setImage(imageIcon.getImage());
         }
-        this.support.firePropertyChange("changeImage", null, null);
     }
 
     /**
-     * Return Position of the object.
-     * Each child of this class call this method to get its position.
+     * Return Position of the object. Each child of this class call this method to get its position.
      *
      * @return Position
      */
@@ -71,16 +62,13 @@ public abstract class GameObject {
     }
 
     /**
-     * Set new position of the object
-     * Fire PropertyChangeListener to re-render gamePanel.
+     * Set new position of the object Fire PropertyChangeListener to re-render gamePanel.
      *
      * @param x New x coordinate
      * @param y New y coordinate
-     * @see PropertyChangeListener
      * @see PropertyChangeSupport
      */
     public void setPosition(int x, int y) {
-        this.support.firePropertyChange("changePosition", null, null);
         this.position.setX(x);
         this.position.setY(y);
     }
@@ -101,27 +89,5 @@ public abstract class GameObject {
      */
     public void setData(byte data) {
         this.data = data;
-    }
-
-    /**
-     * Add a Listener. Used for the Observer Pattern since Observer and Observable are deprecated.
-     *
-     * @param propertyChangeListener New PropertyChangeListener
-     * @see PropertyChangeListener
-     * @see PropertyChangeSupport
-     */
-    public void addPropertyChangeListener(PropertyChangeListener propertyChangeListener) {
-        this.support.addPropertyChangeListener(propertyChangeListener);
-    }
-
-    /**
-     * Remove a Listener. Used for the Observer Pattern since Observer and Observable are deprecated.
-     *
-     * @param propertyChangeListener New PropertyChangeListener
-     * @see PropertyChangeListener
-     * @see PropertyChangeSupport
-     */
-    public void removePropertyChangeListener(PropertyChangeListener propertyChangeListener) {
-        this.support.removePropertyChangeListener(propertyChangeListener);
     }
 }

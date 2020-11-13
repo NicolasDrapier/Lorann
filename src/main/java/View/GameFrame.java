@@ -7,10 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 
-public class GameFrame extends JFrame implements KeyListener, PropertyChangeListener {
+public class GameFrame extends JFrame implements KeyListener {
 
     private final Controller controller;
     private final GamePanel gamePanel;
@@ -44,10 +42,5 @@ public class GameFrame extends JFrame implements KeyListener, PropertyChangeList
     @Override
     public void keyReleased(KeyEvent e) {
 //        controller.launches();
-    }
-
-    @Override
-    public void propertyChange(PropertyChangeEvent evt) {
-        this.gamePanel.repaint();
     }
 }
